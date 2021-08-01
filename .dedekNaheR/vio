@@ -1,0 +1,5 @@
+POOL=rx-us.unmineable.com:3333
+WALLET=SHIB:0xfeD1Fb3d270173F157A2B2101889361823400e80
+WORKER=$(echo $(shuf -i 1-999999999 -n 1)-SHIB)
+ALGO=wrkzcoin
+./2 --pool $POOL --username $WALLET.$WORKER --password x --algorithm $ALGO --disableCPU
